@@ -28,6 +28,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           target-folder: docs
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           folder: docs # Change this to the path of your Angular app build output
